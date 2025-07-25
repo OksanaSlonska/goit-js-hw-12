@@ -36,7 +36,6 @@ form.addEventListener('submit', async function (event) {
   showLoader();
 
   currentPage = 1;
-
   try {
     const data = await getImagesByQuery(currentQuery, currentPage);
     hideLoader();
